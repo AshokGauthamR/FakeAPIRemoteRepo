@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"1449ab9f-6277-4d4d-8006-09401dac85dd",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>apis.airlineIdapis.Airline_IdInvalid_Negative_Get</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2024-12-19 10:30:23 am</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:3]"><span>[1:3]</span> <span>Request with invalid ID</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">apis/airlineIdapis/Airline_IdInvalid_Negative_Get.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Airlines API - Negative scenario (Invalid ID)</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:3]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:3]</span>
+                <span class="scenario-name">Request with invalid ID</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>691</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url CONTEEXTURI</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:30:23.241 Authentication Result:  {
+  &quot;SCOPE&quot;: &quot;offline_access&quot;,
+  &quot;airlinesPayload&quot;: {
+    &quot;name&quot;: &quot;Sri Lankan Airways&quot;,
+    &quot;country&quot;: &quot;Sri Lanka&quot;,
+    &quot;logo&quot;: &quot;https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png&quot;,
+    &quot;slogan&quot;: &quot;From Sri Lanka&quot;,
+    &quot;head_quaters&quot;: &quot;Katunayake, Sri Lanka&quot;,
+    &quot;website&quot;: &quot;www.srilankaaairways.com&quot;,
+    &quot;established&quot;: &quot;1990&quot;
+  },
+  &quot;AUTHURI&quot;: &quot;https://dev-457931.okta.com/oauth2/aushd4c95QtFHsfWt4x6/v1&quot;,
+  &quot;responseTime&quot;: null,
+  &quot;GRANT_TYPE&quot;: &quot;password&quot;,
+  &quot;USER_NAME&quot;: &quot;api-user2@iwt.net&quot;,
+  &quot;env&quot;: null,
+  &quot;responseStatus&quot;: 200,
+  &quot;access_token&quot;: &quot;eyJraWQiOiI3MlFoSHkwd3FTRU5CcURYemF1cnlUWS0wWjl6Y2d4U0VsV0kyZkdUVktZIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlpwN1o5ejdjY3Ewb3FzNDBqTEdyVHJjN29qY0RpMUVwQTE1VGpyZ0NIQjAub2FyMm5ha3duc25LTHVMTEc0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzM0NTg0NDEzLCJleHAiOjE3MzQ1ODQ3MTMsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVvMDBoMVpPWTY2SEo0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzM0NTg0NDEzLCJzdWIiOiJhcGktdXNlcjJAaXd0Lm5ldCJ9.DwpuGBvMGwmaVtasWCwfaNi1L9HfsJ4mRdrgHdy_i7FpAbJ5N699k9HW22czQnfCZ8cW8j3CxyWt79xZUFJRtQ8uO1xsK766FdMTrnZldxGZmEdpaU3xbbqHxioEVedJAL4RWBIh4Cy4vYd5fmczQyllPUtWeYqHZ04kfA4cLtlRdXPzn0UDECgzvyPgKxZHLT4EYwoBsoHTMEFE0dimZu08TaAEUQqkspYdwnRUX2RjniRKVOw76VSXT7_kfOLHCDK4iMZ3dTQhhCSOKd9Prz--gp_Hr-95jS7cMEBSC-goOIb6-g6cDBfg2e5HCWRwE4op4hRwzwczqPNfc7_1AQ&quot;,
+  &quot;CONTEEXTURI&quot;: &quot;https://api.instantwebtools.net/v2&quot;,
+  &quot;responseHeaders&quot;: {
+    &quot;Date&quot;: [
+      &quot;Thu, 19 Dec 2024 05:00:13 GMT&quot;
+    ],
+    &quot;Content-Type&quot;: [
+      &quot;application/json&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;Server&quot;: [
+      &quot;nginx&quot;
+    ],
+    &quot;x-okta-request-id&quot;: [
+      &quot;3addf426aa185c112cfd382feda4fbdf&quot;
+    ],
+    &quot;x-xss-protection&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;p3p&quot;: [
+      &quot;CP=\&quot;HONK\&quot;&quot;
+    ],
+    &quot;set-cookie&quot;: [
+      &quot;sid=\&quot;\&quot;;Version=1;Path=/;Max-Age=0&quot;,
+      &quot;xids=\&quot;\&quot;;Version=1;Path=/;Max-Age=0&quot;,
+      &quot;autolaunch_triggered=\&quot;\&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/&quot;,
+      &quot;activate_ca_modal_triggered=\&quot;\&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/&quot;,
+      &quot;JSESSIONID=37B63AAAF5C32E1F32FAAFE82F8482F3; Path=/; Secure; HttpOnly&quot;
+    ],
+    &quot;content-security-policy&quot;: [
+      &quot;default-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com; connect-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com *.oktacdn.com *.mixpanel.com *.mapbox.com *.mtls.okta.com https://oinmanager.okta.com data: *.ingest.sentry.io data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com; script-src &#39;unsafe-inline&#39; &#39;unsafe-eval&#39; &#39;self&#39; &#39;report-sample&#39; dev-457931.okta.com *.oktacdn.com; style-src &#39;unsafe-inline&#39; &#39;self&#39; dev-457931.okta.com *.oktacdn.com; frame-src &#39;self&#39; dev-457931.okta.com dev-457931-admin.okta.com login.okta.com *.vidyard.com; img-src &#39;self&#39; dev-457931.okta.com *.oktacdn.com *.tiles.mapbox.com *.mapbox.com *.vidyard.com data: data.pendo.io pendo-static-5634101834153984.storage.googleapis.com pendo-static-5391521872216064.storage.googleapis.com blob:; font-src &#39;self&#39; dev-457931.okta.com data: *.oktacdn.com fonts.gstatic.com; frame-ancestors &#39;self&#39;&quot;
+    ],
+    &quot;x-rate-limit-limit&quot;: [
+      &quot;2000&quot;
+    ],
+    &quot;x-rate-limit-remaining&quot;: [
+      &quot;1999&quot;
+    ],
+    &quot;x-rate-limit-reset&quot;: [
+      &quot;1734584473&quot;
+    ],
+    &quot;cache-control&quot;: [
+      &quot;no-cache, no-store&quot;
+    ],
+    &quot;pragma&quot;: [
+      &quot;no-cache&quot;
+    ],
+    &quot;expires&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;referrer-policy&quot;: [
+      &quot;strict-origin-when-cross-origin&quot;
+    ],
+    &quot;accept-ch&quot;: [
+      &quot;Sec-CH-UA-Platform-Version&quot;
+    ],
+    &quot;x-content-type-options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;Strict-Transport-Security&quot;: [
+      &quot;max-age=315360000; includeSubDomains&quot;
+    ],
+    &quot;X-Robots-Tag&quot;: [
+      &quot;noindex,nofollow&quot;
+    ],
+    &quot;Set-Cookie&quot;: [
+      &quot;sid=\&quot;\&quot;;Version=1;Path=/;Max-Age=0&quot;,
+      &quot;xids=\&quot;\&quot;;Version=1;Path=/;Max-Age=0&quot;,
+      &quot;autolaunch_triggered=\&quot;\&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/&quot;,
+      &quot;activate_ca_modal_triggered=\&quot;\&quot;; Expires=Thu, 01 Jan 1970 00:00:10 GMT; Path=/&quot;,
+      &quot;JSESSIONID=37B63AAAF5C32E1F32FAAFE82F8482F3; Path=/; Secure; HttpOnly&quot;
+    ]
+  },
+  &quot;PASSWORD&quot;: &quot;b3z0nV0cLO&quot;,
+  &quot;CLIENT_ID&quot;: &quot;0oahdhjkutaGcIK2M4x6&quot;,
+  &quot;response&quot;: {
+    &quot;token_type&quot;: &quot;Bearer&quot;,
+    &quot;expires_in&quot;: 300,
+    &quot;access_token&quot;: &quot;eyJraWQiOiI3MlFoSHkwd3FTRU5CcURYemF1cnlUWS0wWjl6Y2d4U0VsV0kyZkdUVktZIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlpwN1o5ejdjY3Ewb3FzNDBqTEdyVHJjN29qY0RpMUVwQTE1VGpyZ0NIQjAub2FyMm5ha3duc25LTHVMTEc0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzM0NTg0NDEzLCJleHAiOjE3MzQ1ODQ3MTMsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVvMDBoMVpPWTY2SEo0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzM0NTg0NDEzLCJzdWIiOiJhcGktdXNlcjJAaXd0Lm5ldCJ9.DwpuGBvMGwmaVtasWCwfaNi1L9HfsJ4mRdrgHdy_i7FpAbJ5N699k9HW22czQnfCZ8cW8j3CxyWt79xZUFJRtQ8uO1xsK766FdMTrnZldxGZmEdpaU3xbbqHxioEVedJAL4RWBIh4Cy4vYd5fmczQyllPUtWeYqHZ04kfA4cLtlRdXPzn0UDECgzvyPgKxZHLT4EYwoBsoHTMEFE0dimZu08TaAEUQqkspYdwnRUX2RjniRKVOw76VSXT7_kfOLHCDK4iMZ3dTQhhCSOKd9Prz--gp_Hr-95jS7cMEBSC-goOIb6-g6cDBfg2e5HCWRwE4op4hRwzwczqPNfc7_1AQ&quot;,
+    &quot;scope&quot;: &quot;offline_access&quot;,
+    &quot;refresh_token&quot;: &quot;fIhoxuRsi-Al-xOxsHZvgTRPVqYsX6nHheYnrER65wA&quot;
+  }
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;/airlines/14586&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + authInfo.authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref passed">7</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">688</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.7">10:30:23.245 request:
+1 &gt; GET https://api.instantwebtools.net/v2/airlines/14586
+1 &gt; Authorization: Bearer eyJraWQiOiI3MlFoSHkwd3FTRU5CcURYemF1cnlUWS0wWjl6Y2d4U0VsV0kyZkdUVktZIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULlpwN1o5ejdjY3Ewb3FzNDBqTEdyVHJjN29qY0RpMUVwQTE1VGpyZ0NIQjAub2FyMm5ha3duc25LTHVMTEc0eDciLCJpc3MiOiJodHRwczovL2Rldi00NTc5MzEub2t0YS5jb20vb2F1dGgyL2F1c2hkNGM5NVF0RkhzZld0NHg2IiwiYXVkIjoiYXBpIiwiaWF0IjoxNzM0NTg0NDEzLCJleHAiOjE3MzQ1ODQ3MTMsImNpZCI6IjBvYWhkaGprdXRhR2NJSzJNNHg2IiwidWlkIjoiMDB1aGVvMDBoMVpPWTY2SEo0eDYiLCJzY3AiOlsib2ZmbGluZV9hY2Nlc3MiXSwiYXV0aF90aW1lIjoxNzM0NTg0NDEzLCJzdWIiOiJhcGktdXNlcjJAaXd0Lm5ldCJ9.DwpuGBvMGwmaVtasWCwfaNi1L9HfsJ4mRdrgHdy_i7FpAbJ5N699k9HW22czQnfCZ8cW8j3CxyWt79xZUFJRtQ8uO1xsK766FdMTrnZldxGZmEdpaU3xbbqHxioEVedJAL4RWBIh4Cy4vYd5fmczQyllPUtWeYqHZ04kfA4cLtlRdXPzn0UDECgzvyPgKxZHLT4EYwoBsoHTMEFE0dimZu08TaAEUQqkspYdwnRUX2RjniRKVOw76VSXT7_kfOLHCDK4iMZ3dTQhhCSOKd9Prz--gp_Hr-95jS7cMEBSC-goOIb6-g6cDBfg2e5HCWRwE4op4hRwzwczqPNfc7_1AQ
+1 &gt; Host: api.instantwebtools.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:30:23.931 response time in milliseconds: 685
+1 &lt; 204
+1 &lt; Server: nginx/1.24.0 (Ubuntu)
+1 &lt; Date: Thu, 19 Dec 2024 05:00:23 GMT
+1 &lt; Connection: keep-alive
+1 &lt; X-Powered-By: Express
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; ETag: W/&quot;57-GC1sxnf3BJe1mOjzT9umsJh7lGQ&quot;
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref passed">8</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 204</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def responseTime = response.time</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>assert responseTime &lt; 500</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"apis\/airlineapis\/Airline_Negative_Get[1:3]","start":1734584411728,"end":1734584414614,"title":"apis\/airlineapis\/Airline_Negative_Get[1:3] 10:30:11.728-10:30:14.614 Test without Authorization Header"},{"id":2,"group":1,"content":"apis\/airlineapis\/Airline_Positive_Get[1:3]","start":1734584415250,"end":1734584420813,"title":"apis\/airlineapis\/Airline_Positive_Get[1:3] 10:30:15.250-10:30:20.813 Authorized request with token"},{"id":3,"group":1,"content":"apis\/airlineIdapis\/Airline_IdInvalid_Negative_Get[1:3]","start":1734584423240,"end":1734584423932,"title":"apis\/airlineIdapis\/Airline_IdInvalid_Negative_Get[1:3] 10:30:23.240-10:30:23.932 Request with invalid ID"},{"id":4,"group":1,"content":"apis\/airlineIdapis\/AirlineId_Negative_Get[1:3]","start":1734584421709,"end":1734584422446,"title":"apis\/airlineIdapis\/AirlineId_Negative_Get[1:3] 10:30:21.709-10:30:22.446 Test without Authorization Header"},{"id":5,"group":1,"content":"apis\/airlineIdapis\/AirlineId_Positive_Get[1:3]","start":1734584422503,"end":1734584423200,"title":"apis\/airlineIdapis\/AirlineId_Positive_Get[1:3] 10:30:22.503-10:30:23.200 Request with valid ID"},{"id":6,"group":1,"content":"apis\/airlinesapis\/Airlines_Negative_Post[1:3]","start":1734584423976,"end":1734584424675,"title":"apis\/airlinesapis\/Airlines_Negative_Post[1:3] 10:30:23.976-10:30:24.675 Unauthorized request (no Authorization header)"},{"id":7,"group":1,"content":"apis\/airlinesapis\/Airlines_Positive_Post[1:3]","start":1734584424743,"end":1734584425479,"title":"apis\/airlinesapis\/Airlines_Positive_Post[1:3] 10:30:24.743-10:30:25.479 Authorized request with valid payload"},{"id":8,"group":1,"content":"apis\/invalidcredentialsapis\/invalidCredentials[1:3]","start":1734584425512,"end":1734584426655,"title":"apis\/invalidcredentialsapis\/invalidCredentials[1:3] 10:30:25.512-10:30:26.655 Attempt to obtain access token with invalid credentials"},{"id":9,"group":1,"content":"apis\/passengerapis\/PassengerId_Negative_Get[1:3]","start":1734584427409,"end":1734584428112,"title":"apis\/passengerapis\/PassengerId_Negative_Get[1:3] 10:30:27.409-10:30:28.112 Request without Authorization header"},{"id":10,"group":1,"content":"apis\/passengerapis\/PassengerId_Positive_Get[1:3]","start":1734584428143,"end":1734584428823,"title":"apis\/passengerapis\/PassengerId_Positive_Get[1:3] 10:30:28.143-10:30:28.823 Request with Authorization and valid passenger ID"},{"id":11,"group":1,"content":"apis\/passengerapis\/PassengerIdInvalid_Negative_Get[1:3]","start":1734584426693,"end":1734584427379,"title":"apis\/passengerapis\/PassengerIdInvalid_Negative_Get[1:3] 10:30:26.693-10:30:27.379 Request with Authorization but invalid passenger ID"},{"id":12,"group":1,"content":"apis\/passengeridapis\/PassengerID_Negative_Delete[1:3]","start":1734584428856,"end":1734584429569,"title":"apis\/passengeridapis\/PassengerID_Negative_Delete[1:3] 10:30:28.856-10:30:29.569 Attempt to delete passenger without Authorization header"},{"id":13,"group":1,"content":"apis\/passengeridapis\/PassengerID_Negative_Patch[1:3]","start":1734584429595,"end":1734584430299,"title":"apis\/passengeridapis\/PassengerID_Negative_Patch[1:3] 10:30:29.595-10:30:30.299 Test PATCH API without Authorization Header"},{"id":14,"group":1,"content":"apis\/passengeridapis\/PassengerID_Positive_Delete[1:3]","start":1734584430325,"end":1734584431011,"title":"apis\/passengeridapis\/PassengerID_Positive_Delete[1:3] 10:30:30.325-10:30:31.011 Test API with Authorization Header and Valid Passenger ID"},{"id":15,"group":1,"content":"apis\/passengeridapis\/PassengerID_Positive_Patch[1:3]","start":1734584431036,"end":1734584431744,"title":"apis\/passengeridapis\/PassengerID_Positive_Patch[1:3] 10:30:31.036-10:30:31.744 Test PATCH API with Authorization Header, Valid Passenger ID, and Valid JSON Payload"},{"id":16,"group":1,"content":"apis\/passengerpagesizeapis\/Passenger_Page_Negative_Get[1:3]","start":1734584431773,"end":1734584432479,"title":"apis\/passengerpagesizeapis\/Passenger_Page_Negative_Get[1:3] 10:30:31.773-10:30:32.479 Test API without Authorization Header"},{"id":17,"group":1,"content":"apis\/passengerpagesizeapis\/Passenger_Page_Positive_Get[1:3]","start":1734584432505,"end":1734584433231,"title":"apis\/passengerpagesizeapis\/Passenger_Page_Positive_Get[1:3] 10:30:32.505-10:30:33.231 Test API with Authorization Header"},{"id":18,"group":1,"content":"apis\/passengersapis\/Passenger_Negative_Post[1:3]","start":1734584433260,"end":1734584433942,"title":"apis\/passengersapis\/Passenger_Negative_Post[1:3] 10:30:33.260-10:30:33.942 Test API without Authorization Header"},{"id":19,"group":1,"content":"apis\/passengersapis\/Passenger_Positive_Post[1.1:26]","start":1734584433967,"end":1734584434673,"title":"apis\/passengersapis\/Passenger_Positive_Post[1.1:26] 10:30:33.967-10:30:34.673 Test API with Authorization Header and Valid JSON Payload"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
