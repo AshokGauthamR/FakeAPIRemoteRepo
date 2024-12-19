@@ -4,7 +4,7 @@ Feature: Test PATCH API with Authorization Header and Valid Payload
     Given url CONTEEXTURI
     And path '/passenger/667ab7677ad8fb440f4343c5'
     And header Authorization = 'Bearer ' + authInfo.authToken
-    * def passengerPaylod = read('classpath:PassengerPayload.json')
+    * def passengerPaylod = read('PassengerPayload.json')
     And request passengerPaylod
     When method PATCH
     Then status 200
